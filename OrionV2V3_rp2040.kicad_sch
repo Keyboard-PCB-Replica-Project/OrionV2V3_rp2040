@@ -2837,7 +2837,7 @@
 				)
 			)
 		)
-		(symbol "Regulator_Linear:XC6206PxxxMR"
+		(symbol "Regulator_Linear:MIC5219-3.3YM5"
 			(pin_names
 				(offset 0.254)
 			)
@@ -2845,15 +2845,15 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "U"
-				(at -3.81 3.175 0)
+				(at -3.81 5.715 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "XC6206PxxxMR"
-				(at 0 3.175 0)
+			(property "Value" "MIC5219-3.3YM5"
+				(at 0 5.715 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2861,17 +2861,16 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-				(at 0 5.715 0)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
+				(at 0 8.255 0)
 				(effects
 					(font
 						(size 1.27 1.27)
-						(italic yes)
 					)
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://www.torexsemi.com/file/xc6206/XC6206.pdf"
+			(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/MIC5219-500mA-Peak-Output-LDO-Regulator-DS20006021A.pdf"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2880,7 +2879,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Positive 60-250mA Low Dropout Regulator, Fixed Output, SOT-23"
+			(property "Description" "500mA low dropout linear regulator, fixed 3.3V output, SOT-23-5"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2889,7 +2888,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "Torex LDO Voltage Regulator Fixed Positive"
+			(property "ki_keywords" "500mA ultra-low-noise LDO linear voltage regulator fixed positive"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2907,9 +2906,9 @@
 					(hide yes)
 				)
 			)
-			(symbol "XC6206PxxxMR_0_1"
+			(symbol "MIC5219-3.3YM5_0_1"
 				(rectangle
-					(start -5.08 1.905)
+					(start -5.08 4.445)
 					(end 5.08 -5.08)
 					(stroke
 						(width 0.254)
@@ -2920,11 +2919,11 @@
 					)
 				)
 			)
-			(symbol "XC6206PxxxMR_1_1"
+			(symbol "MIC5219-3.3YM5_1_1"
 				(pin power_in line
-					(at 0 -7.62 90)
+					(at -7.62 2.54 0)
 					(length 2.54)
-					(name "GND"
+					(name "IN"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2939,10 +2938,10 @@
 						)
 					)
 				)
-				(pin power_out line
-					(at 7.62 0 180)
+				(pin power_in line
+					(at 0 -7.62 90)
 					(length 2.54)
-					(name "VO"
+					(name "GND"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2957,10 +2956,10 @@
 						)
 					)
 				)
-				(pin power_in line
+				(pin input line
 					(at -7.62 0 0)
 					(length 2.54)
-					(name "VI"
+					(name "EN"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2968,6 +2967,42 @@
 						)
 					)
 					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "BP"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 7.62 2.54 180)
+					(length 2.54)
+					(name "OUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4632,6 +4667,12 @@
 		(uuid "02cb12d7-c032-47e7-bfd7-94a5b7a91964")
 	)
 	(junction
+		(at 218.44 134.62)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "035b0d0b-40e3-447f-b77a-ac9e5d0322dc")
+	)
+	(junction
 		(at 535.94 245.11)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4678,6 +4719,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0be0ab6d-08a8-4a7c-9da2-8f234811d146")
+	)
+	(junction
+		(at 236.22 124.46)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0c82477c-1d04-4601-ab9c-eef72101d360")
 	)
 	(junction
 		(at 436.88 106.68)
@@ -5610,6 +5657,12 @@
 		(uuid "b1b886a4-52bf-41f4-8767-ec2c030706ba")
 	)
 	(junction
+		(at 210.82 127)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b29626b4-91fd-4fca-aee5-7c46be720021")
+	)
+	(junction
 		(at 447.04 53.34)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5638,12 +5691,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b6eef2e3-331f-404f-93df-1eefd7435460")
-	)
-	(junction
-		(at 237.49 129.54)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b6f4d1ed-a343-401f-8517-96f9dbc31301")
 	)
 	(junction
 		(at 248.92 73.66)
@@ -6107,16 +6154,6 @@
 	)
 	(wire
 		(pts
-			(xy 209.55 129.54) (xy 217.17 129.54)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "02467a4e-3be6-4bad-a6e2-528189efffcd")
-	)
-	(wire
-		(pts
 			(xy 406.4 144.78) (xy 406.4 147.32)
 		)
 		(stroke
@@ -6284,6 +6321,16 @@
 			(type default)
 		)
 		(uuid "0b9f9944-820a-44b9-9b67-dd595b7395a0")
+	)
+	(wire
+		(pts
+			(xy 226.06 128.27) (xy 226.06 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0c031ef9-aa56-4641-80c5-e3bdb7d1b324")
 	)
 	(wire
 		(pts
@@ -6527,6 +6574,16 @@
 	)
 	(wire
 		(pts
+			(xy 210.82 133.35) (xy 210.82 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1cdc2617-df68-4dae-b415-430dfe328e0d")
+	)
+	(wire
+		(pts
 			(xy 284.48 106.68) (xy 299.72 106.68)
 		)
 		(stroke
@@ -6634,6 +6691,16 @@
 			(type default)
 		)
 		(uuid "221eb567-b2e4-4348-8997-57876e56be9d")
+	)
+	(wire
+		(pts
+			(xy 210.82 127) (xy 210.82 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "22b0918f-7995-454f-87fa-8cd9bb38fa2a")
 	)
 	(wire
 		(pts
@@ -7437,16 +7504,6 @@
 	)
 	(wire
 		(pts
-			(xy 232.41 129.54) (xy 237.49 129.54)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4f2b8615-66b9-48f7-9127-90b567464d5b")
-	)
-	(wire
-		(pts
 			(xy 38.1 88.9) (xy 38.1 66.04)
 		)
 		(stroke
@@ -7474,16 +7531,6 @@
 			(type default)
 		)
 		(uuid "506475e3-0e40-40af-bf41-4d6cc4b04f9b")
-	)
-	(wire
-		(pts
-			(xy 237.49 129.54) (xy 237.49 132.08)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5083ba01-9d1e-492d-ac47-75ca2d288aad")
 	)
 	(wire
 		(pts
@@ -7827,6 +7874,16 @@
 	)
 	(wire
 		(pts
+			(xy 218.44 134.62) (xy 226.06 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "68cfc929-0ecf-4dc1-9d75-a1b6c1c8c6bb")
+	)
+	(wire
+		(pts
 			(xy 391.16 63.5) (xy 391.16 66.04)
 		)
 		(stroke
@@ -7904,6 +7961,16 @@
 			(type default)
 		)
 		(uuid "6b05cc83-4ca8-4a8c-af93-5dafbed1b350")
+	)
+	(wire
+		(pts
+			(xy 226.06 134.62) (xy 226.06 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6b569f5f-8921-431b-bae5-48ebaa03515b")
 	)
 	(wire
 		(pts
@@ -8847,6 +8914,16 @@
 	)
 	(wire
 		(pts
+			(xy 207.01 124.46) (xy 207.01 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9b879284-f0c6-417e-8645-8572971c3475")
+	)
+	(wire
+		(pts
 			(xy 375.92 43.18) (xy 375.92 45.72)
 		)
 		(stroke
@@ -9094,6 +9171,16 @@
 			(type default)
 		)
 		(uuid "a96962f6-9a13-4557-b85b-39c5859a88f9")
+	)
+	(wire
+		(pts
+			(xy 210.82 128.27) (xy 210.82 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aa2ad2ad-4216-4967-99aa-fd0d3d3b59c6")
 	)
 	(wire
 		(pts
@@ -9407,16 +9494,6 @@
 	)
 	(wire
 		(pts
-			(xy 237.49 128.27) (xy 237.49 129.54)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b9856257-556e-4714-9fe0-041399eea301")
-	)
-	(wire
-		(pts
 			(xy 254 45.72) (xy 254 43.18)
 		)
 		(stroke
@@ -9434,16 +9511,6 @@
 			(type default)
 		)
 		(uuid "ba714f6a-e918-4f04-bb2e-93b7f1c7267c")
-	)
-	(wire
-		(pts
-			(xy 209.55 129.54) (xy 209.55 132.08)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bb52374d-b998-42c2-adfa-fdfce49671eb")
 	)
 	(wire
 		(pts
@@ -9837,6 +9904,16 @@
 	)
 	(wire
 		(pts
+			(xy 210.82 134.62) (xy 218.44 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ce4ef4b2-44b0-4266-a0d4-83b089e070ca")
+	)
+	(wire
+		(pts
 			(xy 254 45.72) (xy 284.48 45.72)
 		)
 		(stroke
@@ -10187,6 +10264,16 @@
 	)
 	(wire
 		(pts
+			(xy 236.22 124.46) (xy 236.22 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "db865235-10f7-4f18-80a9-325d63176b60")
+	)
+	(wire
+		(pts
 			(xy 314.96 63.5) (xy 314.96 66.04)
 		)
 		(stroke
@@ -10254,6 +10341,16 @@
 			(type default)
 		)
 		(uuid "de2cc38a-b41f-4372-bd9b-b9c2cc663963")
+	)
+	(wire
+		(pts
+			(xy 207.01 127) (xy 210.82 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "def714c4-8fac-4316-9e5c-ab4e9d29ab54")
 	)
 	(wire
 		(pts
@@ -10444,6 +10541,16 @@
 			(type default)
 		)
 		(uuid "e552e3b3-f530-4c1e-8de6-dab055472c98")
+	)
+	(wire
+		(pts
+			(xy 236.22 124.46) (xy 226.06 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e5be1d2b-b851-4813-862a-f733fe856409")
 	)
 	(wire
 		(pts
@@ -12277,28 +12384,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "VBUS"
-		(shape input)
-		(at 209.55 129.54 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "cd658a5e-dffa-419f-92b9-8c5e9e1ed49c")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 201.6662 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 				(hide yes)
 			)
 		)
@@ -16610,7 +16695,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ScottoKeebs_Components:LED_SK6812MINI-E_clrce"
+		(property "Footprint" "ScottoKeebs_Components:LED_SK6812MINI"
 			(at 73.66 260.35 0)
 			(effects
 				(font
@@ -16929,6 +17014,75 @@
 			(project "OrionV2V3_rp2040"
 				(path "/1f021452-8c9b-4573-baeb-22f6c0ef7bde"
 					(reference "#PWR072")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 236.22 128.27 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1ca3cb02-496e-4854-ae78-ee589e65cb23")
+		(property "Reference" "C13"
+			(at 237.236 125.984 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "2.2uF"
+			(at 238.506 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "hjcustom:C_0402_1005Metric"
+			(at 236.22 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 236.22 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 236.22 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b307bbdd-d307-44dc-a8f2-73206a94a7e9")
+		)
+		(pin "2"
+			(uuid "062de963-b5cf-45d1-b088-334ac7a780d5")
+		)
+		(instances
+			(project "OrionV2V3_rp2040"
+				(path "/1f021452-8c9b-4573-baeb-22f6c0ef7bde"
+					(reference "C13")
 					(unit 1)
 				)
 			)
@@ -18477,7 +18631,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ScottoKeebs_Components:LED_SK6812MINI-E_clrce"
+		(property "Footprint" "ScottoKeebs_Components:LED_SK6812MINI"
 			(at 144.78 260.35 0)
 			(effects
 				(font
@@ -20812,7 +20966,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ScottoKeebs_Components:LED_SK6812MINI-E_clrce"
+		(property "Footprint" "ScottoKeebs_Components:LED_SK6812MINI"
 			(at 537.21 260.35 0)
 			(effects
 				(font
@@ -21650,7 +21804,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ScottoKeebs_Components:LED_SK6812MINI-E_clrce"
+		(property "Footprint" "ScottoKeebs_Components:LED_SK6812MINI"
 			(at 430.53 260.35 0)
 			(effects
 				(font
@@ -21998,7 +22152,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ScottoKeebs_Components:LED_SK6812MINI-E_clrce"
+		(property "Footprint" "ScottoKeebs_Components:LED_SK6812MINI"
 			(at 412.75 260.35 0)
 			(effects
 				(font
@@ -22043,75 +22197,6 @@
 			(project "OrionV2V3_rp2040"
 				(path "/1f021452-8c9b-4573-baeb-22f6c0ef7bde"
 					(reference "ULED20")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 237.49 134.62 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "49811bd8-6fb9-4350-b49a-2eed53b8bc0e")
-		(property "Reference" "C14"
-			(at 231.14 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1u"
-			(at 231.14 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "hjcustom:C_0402_1005Metric"
-			(at 237.49 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 237.49 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 237.49 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "4a0c5391-3f8b-4868-836b-ead14bcd3a83")
-		)
-		(pin "2"
-			(uuid "e11e9d14-f84a-42bc-8164-acdea39a740a")
-		)
-		(instances
-			(project "OrionV2V3_rp2040"
-				(path "/1f021452-8c9b-4573-baeb-22f6c0ef7bde"
-					(reference "C14")
 					(unit 1)
 				)
 			)
@@ -22770,6 +22855,72 @@
 			(project "OrionV2V3_rp2040"
 				(path "/1f021452-8c9b-4573-baeb-22f6c0ef7bde"
 					(reference "#PWR0100")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 236.22 124.46 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5016b4d7-8a31-4279-91f8-4bcf299ecacb")
+		(property "Reference" "#PWR011"
+			(at 236.22 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 236.22 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 236.22 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 236.22 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 236.22 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d592fa5c-721f-454d-aa8f-45345a581d8f")
+		)
+		(instances
+			(project "OrionV2V3_rp2040"
+				(path "/1f021452-8c9b-4573-baeb-22f6c0ef7bde"
+					(reference "#PWR011")
 					(unit 1)
 				)
 			)
@@ -23859,6 +24010,83 @@
 			(project "OrionV2V3_rp2040"
 				(path "/1f021452-8c9b-4573-baeb-22f6c0ef7bde"
 					(reference "#PWR0117")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Regulator_Linear:MIC5219-3.3YM5")
+		(at 218.44 127 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "55c71279-ea77-4708-8138-41ab7b4ae2f1")
+		(property "Reference" "U1"
+			(at 218.44 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MIC5219-3.3YM5"
+			(at 218.44 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
+			(at 218.44 118.745 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/MIC5219-500mA-Peak-Output-LDO-Regulator-DS20006021A.pdf"
+			(at 218.44 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "500mA low dropout linear regulator, fixed 3.3V output, SOT-23-5"
+			(at 218.44 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "6b2c526b-b29f-45de-b9bf-d571bdc5c3dd")
+		)
+		(pin "1"
+			(uuid "7f69c3be-cd27-484b-93bb-ab7ae10fa702")
+		)
+		(pin "5"
+			(uuid "e4642ade-0dc5-4022-a086-c233e96341cb")
+		)
+		(pin "4"
+			(uuid "428d243d-43db-427b-8b76-f62588b7a735")
+		)
+		(pin "3"
+			(uuid "fa6460bc-2e6a-4d82-885b-b7af7e0ed3a5")
+		)
+		(instances
+			(project "OrionV2V3_rp2040"
+				(path "/1f021452-8c9b-4573-baeb-22f6c0ef7bde"
+					(reference "U1")
 					(unit 1)
 				)
 			)
@@ -25450,6 +25678,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 236.22 130.81 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "669b5629-cf65-4c50-bd0e-56668c7d95c5")
+		(property "Reference" "#PWR012"
+			(at 236.22 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 236.22 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 236.22 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 236.22 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 236.22 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b059fad9-9351-467f-b33a-fb5f814a27f0")
+		)
+		(instances
+			(project "OrionV2V3_rp2040"
+				(path "/1f021452-8c9b-4573-baeb-22f6c0ef7bde"
+					(reference "#PWR012")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:D_Small")
 		(at 284.48 121.92 90)
 		(unit 1)
@@ -26510,7 +26804,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ScottoKeebs_Components:LED_SK6812MINI-E_clrce"
+		(property "Footprint" "ScottoKeebs_Components:LED_SK6812MINI"
 			(at 91.44 260.35 0)
 			(effects
 				(font
@@ -27828,7 +28122,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ScottoKeebs_Components:LED_SK6812MINI-E_clrce"
+		(property "Footprint" "ScottoKeebs_Components:LED_SK6812MINI"
 			(at 127 260.35 0)
 			(effects
 				(font
@@ -27940,6 +28234,75 @@
 			(project "OrionV2V3_rp2040"
 				(path "/1f021452-8c9b-4573-baeb-22f6c0ef7bde"
 					(reference "MX71")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 210.82 130.81 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "797a57c1-99bb-45ca-be0d-39df2425ec6a")
+		(property "Reference" "C14"
+			(at 205.74 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1uF"
+			(at 207.01 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "hjcustom:C_0402_1005Metric"
+			(at 210.82 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 210.82 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 210.82 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2e6ee0d1-b8ba-4151-8393-c0943d96fc4f")
+		)
+		(pin "2"
+			(uuid "691d458a-db75-4b41-9216-e3716c4ee02f")
+		)
+		(instances
+			(project "OrionV2V3_rp2040"
+				(path "/1f021452-8c9b-4573-baeb-22f6c0ef7bde"
+					(reference "C14")
 					(unit 1)
 				)
 			)
@@ -28081,72 +28444,6 @@
 			(project "OrionV2V3_rp2040"
 				(path "/1f021452-8c9b-4573-baeb-22f6c0ef7bde"
 					(reference "ULED8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 224.79 137.16 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7a75265a-8c14-4516-b77e-cace7468f728")
-		(property "Reference" "#PWR012"
-			(at 224.79 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 224.79 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 224.79 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 224.79 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 224.79 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "cd9747ce-8cb3-47f4-9557-ab31dfa7c35b")
-		)
-		(instances
-			(project "OrionV2V3_rp2040"
-				(path "/1f021452-8c9b-4573-baeb-22f6c0ef7bde"
-					(reference "#PWR012")
 					(unit 1)
 				)
 			)
@@ -31262,78 +31559,6 @@
 			(project "OrionV2V3_rp2040"
 				(path "/1f021452-8c9b-4573-baeb-22f6c0ef7bde"
 					(reference "#PWR088")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Regulator_Linear:XC6206PxxxMR")
-		(at 224.79 129.54 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "906b6668-8832-460a-b6df-5e87de54e11c")
-		(property "Reference" "U1"
-			(at 224.79 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "XC6206PxxxMR"
-			(at 224.79 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 224.79 123.825 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.torexsemi.com/file/xc6206/XC6206.pdf"
-			(at 224.79 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 224.79 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "fe53db6c-06f6-4da2-970c-35076bcebd07")
-		)
-		(pin "2"
-			(uuid "d14867d1-57e6-4039-abfa-1e1f7f98b6c8")
-		)
-		(pin "3"
-			(uuid "7b349ab4-015f-4879-b38b-45348c767317")
-		)
-		(instances
-			(project "OrionV2V3_rp2040"
-				(path "/1f021452-8c9b-4573-baeb-22f6c0ef7bde"
-					(reference "U1")
 					(unit 1)
 				)
 			)
@@ -35240,7 +35465,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ScottoKeebs_Components:LED_SK6812MINI-E_clrce"
+		(property "Footprint" "ScottoKeebs_Components:LED_SK6812MINI"
 			(at 109.22 260.35 0)
 			(effects
 				(font
@@ -36203,6 +36428,72 @@
 			(project "OrionV2V3_rp2040"
 				(path "/1f021452-8c9b-4573-baeb-22f6c0ef7bde"
 					(reference "#PWR091")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 207.01 124.46 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b50f027e-ff15-4c0f-aab7-d9b287377811")
+		(property "Reference" "#PWR08"
+			(at 207.01 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 207.01 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 207.01 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 207.01 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 207.01 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "42ab2720-6122-457e-8d26-e39ab1bd4f96")
+		)
+		(instances
+			(project "OrionV2V3_rp2040"
+				(path "/1f021452-8c9b-4573-baeb-22f6c0ef7bde"
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -38080,7 +38371,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ScottoKeebs_Components:LED_SK6812MINI-E_clrce"
+		(property "Footprint" "ScottoKeebs_Components:LED_SK6812MINI"
 			(at 252.73 260.35 0)
 			(effects
 				(font
@@ -38269,76 +38560,6 @@
 			(project "OrionV2V3_rp2040"
 				(path "/1f021452-8c9b-4573-baeb-22f6c0ef7bde"
 					(reference "ULED17")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 209.55 134.62 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c7e86667-5aaa-487e-bde0-8f449fbeb139")
-		(property "Reference" "C13"
-			(at 212.09 133.3562 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1u"
-			(at 212.09 135.8962 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "hjcustom:C_0402_1005Metric"
-			(at 209.55 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 209.55 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 209.55 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b133732a-72a8-4623-a0af-fb77045bafb2")
-		)
-		(pin "2"
-			(uuid "d2dc9788-ed07-4c1e-b274-73df971cec96")
-		)
-		(instances
-			(project "OrionV2V3_rp2040"
-				(path "/1f021452-8c9b-4573-baeb-22f6c0ef7bde"
-					(reference "C13")
 					(unit 1)
 				)
 			)
@@ -38962,72 +39183,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 237.49 137.16 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "cd286ffc-d275-4240-9161-6d0e17cea632")
-		(property "Reference" "#PWR013"
-			(at 237.49 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 237.49 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 237.49 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 237.49 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 237.49 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ee737961-6c68-4ce5-ba11-365be5a61636")
-		)
-		(instances
-			(project "OrionV2V3_rp2040"
-				(path "/1f021452-8c9b-4573-baeb-22f6c0ef7bde"
-					(reference "#PWR013")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+5V")
 		(at 299.72 240.03 0)
 		(unit 1)
@@ -39377,6 +39532,72 @@
 			(project "OrionV2V3_rp2040"
 				(path "/1f021452-8c9b-4573-baeb-22f6c0ef7bde"
 					(reference "D48")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 218.44 134.62 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d2abbf2c-d9b9-47f2-a7d4-b422c27c6b11")
+		(property "Reference" "#PWR013"
+			(at 218.44 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 218.44 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 218.44 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 218.44 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 218.44 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d54f3c56-c27d-42a2-9f7a-598412b106d8")
+		)
+		(instances
+			(project "OrionV2V3_rp2040"
+				(path "/1f021452-8c9b-4573-baeb-22f6c0ef7bde"
+					(reference "#PWR013")
 					(unit 1)
 				)
 			)
@@ -40848,71 +41069,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 209.55 137.16 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "e6007b4d-0e89-47e2-b2f2-f1c804baa0f7")
-		(property "Reference" "#PWR011"
-			(at 209.55 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 209.55 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 209.55 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 209.55 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 209.55 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "984cc873-4bcb-4a04-bcf7-3dd6b070f3a7")
-		)
-		(instances
-			(project "OrionV2V3_rp2040"
-				(path "/1f021452-8c9b-4573-baeb-22f6c0ef7bde"
-					(reference "#PWR011")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "ScottoKeebs:SK6812MINI-HS")
 		(at 447.04 252.73 0)
 		(unit 1)
@@ -40937,7 +41093,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ScottoKeebs_Components:LED_SK6812MINI-E_clrce"
+		(property "Footprint" "ScottoKeebs_Components:LED_SK6812MINI"
 			(at 448.31 260.35 0)
 			(effects
 				(font
@@ -41187,72 +41343,6 @@
 			(project "OrionV2V3_rp2040"
 				(path "/1f021452-8c9b-4573-baeb-22f6c0ef7bde"
 					(reference "LC3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3V3")
-		(at 237.49 128.27 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e85c7730-f268-49a0-ada8-4b746290e1be")
-		(property "Reference" "#PWR08"
-			(at 237.49 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 237.49 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 237.49 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 237.49 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 237.49 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "47f72cd6-980c-4026-92a3-325d620addb7")
-		)
-		(instances
-			(project "OrionV2V3_rp2040"
-				(path "/1f021452-8c9b-4573-baeb-22f6c0ef7bde"
-					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -43758,6 +43848,75 @@
 			(project "OrionV2V3_rp2040"
 				(path "/1f021452-8c9b-4573-baeb-22f6c0ef7bde"
 					(reference "D77")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 226.06 130.81 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "fe2c2126-aa88-4e3f-a05e-1e407a9d353b")
+		(property "Reference" "C18"
+			(at 227.076 128.524 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "470pF"
+			(at 228.346 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 226.06 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 226.06 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 226.06 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5d9bc401-319a-4d53-aced-c8f0975d511a")
+		)
+		(pin "2"
+			(uuid "41e769f7-5436-4d7b-8f4b-e6dfd21b9107")
+		)
+		(instances
+			(project "OrionV2V3_rp2040"
+				(path "/1f021452-8c9b-4573-baeb-22f6c0ef7bde"
+					(reference "C18")
 					(unit 1)
 				)
 			)
