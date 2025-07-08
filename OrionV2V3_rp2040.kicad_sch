@@ -6073,14 +6073,6 @@
 		(uuid "446619bc-7703-47f6-b566-287f8adfe97c")
 	)
 	(no_connect
-		(at 167.64 125.73)
-		(uuid "4ad1e3ce-2221-42d6-bab0-97e29b2e705e")
-	)
-	(no_connect
-		(at 167.64 130.81)
-		(uuid "65ac2016-aec3-4cf4-a3bc-f0e7b76b000d")
-	)
-	(no_connect
 		(at 274.32 198.12)
 		(uuid "7af60d13-b28f-4635-a529-7e60f860b3a3")
 	)
@@ -11378,22 +11370,22 @@
 	)
 	(global_label "DM"
 		(shape input)
-		(at 193.04 130.81 0)
+		(at 167.64 125.73 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "1c610478-2e3a-471e-bf09-f9857e18f3d1")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 198.7466 130.81 0)
+			(at 161.9334 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -12060,22 +12052,22 @@
 	)
 	(global_label "DP"
 		(shape input)
-		(at 193.04 125.73 0)
+		(at 167.64 130.81 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "7a423d9c-796e-44d7-ab33-e97f08d35360")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 198.5652 125.73 0)
+			(at 162.1148 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 				(hide yes)
 			)
 		)
